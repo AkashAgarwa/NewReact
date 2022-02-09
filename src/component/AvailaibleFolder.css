@@ -1,0 +1,18 @@
+.AvaecretMainTab{
+display: flex;
+height: 100%;
+flex-direction: column;
+
+}
+.folderList{
+    height: calc(100% - 2.6rem);
+    overflow: scroll;
+}
+.folderList::-webkit-scrollbar {
+    display: none;
+}
+.AvailableButton{
+    margin-top: 0.5rem;
+    display:flex;
+justify-content: end;
+}

@@ -1,0 +1,122 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+Nav{
+    height: 4.375rem;
+    width: 100vw;
+    background-color: #151820;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .LeftNavBar{
+    display: flex;
+    box-sizing: border-box;
+  }
+  .rightNavBar{
+    display: flex;
+    box-sizing: border-box;
+  justify-content: center;
+  
+  }
+  .navUserName>span,
+  .navDocument>span{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    color: #cccccc;
+  }
+  .navUserName,
+  .navDocument{
+    display: flex;align-items: center;
+  }
+  .navDocument>span{
+text-decoration: underline;
+display: flex;
+grid-gap:0.2rem; 
+  }
+  
+  .titleBar{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      height: 100%;
+      margin-right:2.2rem;
+   
+  }
+  .title{font-family: sans-serif;
+      font-size: 1.3rem;
+      white-space: nowrap;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 3.84px;
+      text-align: left;
+      color: white;
+    
+    
+  }
+span{
+     
+    flex-grow: 0;
+    color: #cccccc;
+    
+   font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    padding: 0 0.675rem;
+    text-decoration: none;
+
+}
+
+  .navBarOptionBox{
+      display: flex;
+  }
+  .navBox:hover{
+    background-image: linear-gradient(to top, #72134b, #1d212c);
+  }
+  .navBox:focus{
+    background-image: linear-gradient(to top, #72134b, #1d212c);
+  }
+  .active{
+    background-image: linear-gradient(to top, #72134b, #1d212c);
+    
+  }
+  .navBox{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+display:block;
+    height: calc( 100% - 1px );
+    cursor: pointer;
+    margin: 0.5px 0;
+    flex-grow: 0;
+    white-space: nowrap;
+    display: flex;
+  }
+  .navBox>span{
+    word-break: unset;
+    word-wrap: unset;
+    color: #c4c4c4;
+  }
+
+  @media screen and (max-width: 1024px) {
+.rightNavBar{
+  display: none;
+}
+.navBarOptionBox{
+  justify-content: space-between;
+}
+  }
+  

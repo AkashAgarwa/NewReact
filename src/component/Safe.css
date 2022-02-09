@@ -1,0 +1,93 @@
+.safeCard{
+  background-color: 
+  #151820;
+     width: 100%;
+      cursor: pointer;
+     padding: 1rem 1rem;
+display: flex;
+height: 4.35rem;
+justify-content: space-between;
+    }
+    .cardBox{
+        display: flex;
+        width: 70%;
+    }
+.CardImgbox{
+    height: 100%;
+}
+    .active,
+    .safeCard:focus,
+    .safeCard:hover{
+        background-image: linear-gradient(to right, #72134b, #1d212c);
+    }
+.SafeName{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+
+}
+.SafeName>span{
+    font-size: 0.8rem;
+    max-width:100%;
+    color: white;   
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.safeCard>span{
+    font-family: Roboto;
+    font-size: 1rem;
+
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+.timeOfCreation{
+          opacity: 0.7;
+        font-family: Helvetica;
+        font-size: 0.8rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        max-width:100%;
+        color: white;   
+        font-weight: 400;
+        color: #fff;
+      
+}
+.edit_delete{
+    /* float: right; */
+    align-items: center;
+    height: 2.4rem;
+    display: flex;
+    width: max-content;
+
+}
+.edit_delete>span{
+    cursor: pointer;
+    height: 100%;
+    
+    display: flex;
+    align-items: center
+}
+.deleteCardClass
+{
+    height: 100%;  
+    z-index:2;
+    display: flex;
+    align-items: center;
+}

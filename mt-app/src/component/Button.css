@@ -1,0 +1,19 @@
+.button {
+  font-weight: bold;
+  font-size: 0.875rem;
+  border: none;
+  padding: 0.625rem 1.26rem;
+  cursor: pointer;
+  background: #e20074;
+  color: #fff;
+  margin-left: 0.625rem;
+}
+
+.button--inverse {
+  background: #fff;
+  color: #e20074;
+}
+
+.button:disabled {
+  background: #454c5e;
+}

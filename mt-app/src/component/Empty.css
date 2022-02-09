@@ -1,0 +1,15 @@
+.emptyParent {
+    width: 100%;
+    height: 92%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    justify-content: space-between;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.CompImage{
+width: 40%;
+height: 40%;
+}

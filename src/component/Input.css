@@ -1,0 +1,32 @@
+.input-group {
+    font-size: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+  label{
+    font-size: 0.7rem;
+  }
+  
+  .input {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    resize: none;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .input-help { 
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    color: #8b8ea6;
+  }
+  

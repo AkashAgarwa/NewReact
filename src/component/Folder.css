@@ -1,0 +1,32 @@
+.secretsAvailaible{
+    display: flex;
+}
+.folderName{
+    
+        background-color: 
+        #151820;
+           width: 100%;
+            cursor: pointer;
+            
+    justify-content: space-between;
+           padding: 1rem;
+display: flex;
+height:4rem;
+}
+.deleteSecrets{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+.folderName:hover{
+    background-image: linear-gradient(to right, #72134b, #1d212c);
+}
+.FolderIm{
+    height: 100%;
+}
+.FolderN{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

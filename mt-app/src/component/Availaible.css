@@ -1,0 +1,25 @@
+.safeList{
+width: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+height: calc(100% - 4rem);
+
+}
+.safeList::-webkit-scrollbar {
+    display: none;
+}
+.availaibleMainTab{
+    
+display: flex;
+height: 100%;
+background-color: 
+#151820;
+flex-direction: column;
+}
+
+.iconBox{
+display: flex;
+justify-content: end;
+align-items: center;
+padding-right: 5%;
+}
