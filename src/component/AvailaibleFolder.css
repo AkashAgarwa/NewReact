@@ -5,7 +5,7 @@ flex-direction: column;
 
 }
 .folderList{
-    height: calc(100% - 2.6rem);
+    height: 100%;
     overflow: scroll;
 }
 .folderList::-webkit-scrollbar {

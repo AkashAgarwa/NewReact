@@ -4,7 +4,6 @@ export const addData = (obj) =>{
         payload:{
             safe:obj
         }
-
     }
 }
 export const deleteSafe= (safeId) =>{
@@ -47,12 +46,12 @@ export const searchitem = (searchdata) => {
           }
     }
 }
-export const deleteFolder = (safeId,folderId) => {
-    return{
-        type: "DELETEFOLDER",
-      payload:{
-        id:safeId , 
-        fid:folderId
-          }
-    }
-}
+// export const deleteFolder = (safeId,folderId) => {
+//     return{
+//         type: "DELETEFOLDER",
+//       payload:{
+//         id:safeId, 
+//         fid:folderId
+//           }
+//     }
+// }

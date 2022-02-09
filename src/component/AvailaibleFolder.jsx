@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 function AvailaibleFolder(props) {
 const data=useSelector(state=>state.IS).folder;
 const listItems = data.map((data1,index) =><li  key={index}>
-  <Folder folderName={data1.name} folderId={data.id}/>
+  <Folder folderName={data1.name} folderId={data1.id}/>
 </li>
 );
 const validateSafeForm = () => {
@@ -24,9 +24,9 @@ return (  <>
         {listItems}
     </ul>
 </div>
-<div className='AvailableButton'><Button label={"+Add"} 
+{/* <div className='AvailableButton'><Button label={"+Add"} 
   onClick={props.setCreate} disabled={validateSafeForm()}/></div>
-{props.creat? <SecretForm handleClose={props.handleClose} />:null}
+{props.creat? <SecretForm handleClose={props.handleClose} />:null} */}
 </div></> );
 }
 

@@ -28,8 +28,8 @@ export default function Navbar(){
 <span className='title'>T-VAULT</span>
   </div>
   <div className='navBarOptionBox'>
-  <div className={splitLocation[1]==="" ? "navBox active" : "navBox"}><Link  to="/" style={mystyle}><span>Safes</span></Link></div>
-  <div className={splitLocation[1]==="VaultAppRoles" ? "navBox active" : "navBox"}><Link to="/VaultAppRoles" style={mystyle}><span>Vault AppRoles</span></Link></div>
+  <div className={splitLocation[1]==="" ? "navBox active" : "navBox"}><Link  to="/" style={mystyle}><span>Safes</span> </Link></div>
+  <div className={splitLocation[1]==="VaultAppRoles" ? "navBox active" : "navBox"}><Link to="/VaultAppRoles/hello" style={mystyle}><span>Vault AppRoles</span></Link></div>
   <div className={splitLocation[1]==="ServiceAccounts" ? "navBox active" : "navBox"}><Link to="/ServiceAccounts" style={mystyle}><span>Service Accounts</span></Link></div>
   <div className={splitLocation[1]==="IAMServiceAccounts" ? "navBox active" : "navBox"}><Link to="/IAMServiceAccounts" style={mystyle}><span>IAM Service Accounts</span></Link></div>
   <div className={splitLocation[1]==="AzureActiveDirectory" ? "navBox active" : "navBox"}><Link to="/AzureActiveDirectory" style={mystyle}><span>Azure Active Directory</span></Link></div>

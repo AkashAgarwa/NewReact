@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  useParams
 } from "react-router-dom";
 
 import Sales from './component/Sales'
@@ -24,7 +25,7 @@ export default function App() {
           <Route exact path="/">
             <Sales />
           </Route>
-          <Route exact path="/VaultAppRoles">
+          <Route exact path="/VaultAppRoles/:name">
             <VaultAppRoles />
           </Route>
           <Route exact path="/ServiceAccounts">
