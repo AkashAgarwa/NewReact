@@ -5,7 +5,7 @@ import React from 'react';
 
 function Empty(props) {
     return ( <div className="emptyParent">
-        <div className='CompImage'><img src={myImg} width={"100%"}></img>
+        <div className='CompImage'><img alt="" src={myImg} width={"100%"}></img>
         </div>
   <div> <CreateIcon safeId={props.safeId} handleAdd={props.handleAdd}/></div>
     

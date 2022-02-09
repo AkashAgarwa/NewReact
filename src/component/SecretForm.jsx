@@ -22,11 +22,11 @@ const folderId=useSelector(state=>state.fid)
   const data=useSelector(state=>state.IS);
   const dispatch=useDispatch();
 
-  const validateSecretsForm = () => {
-    if (secret.name.length) return false;
+  // const validateSecretsForm = () => {
+  //   if (secret.name.length) return false;
 
-    return true;
-  };
+  //   return true;
+  // };
 
   return (
       <div className="secretFormMainTab">

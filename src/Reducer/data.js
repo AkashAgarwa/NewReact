@@ -8,7 +8,7 @@ export default function dataReducer (state = [] , action) {
         let obj=[];
         for(let i=0;i<state.length;i++)
         {
-            if(state[i].safeId==action.payload.id);
+            if(state[i].safeId===action.payload.id);
 else{
 obj=[...obj,state[i]];}
 
@@ -18,7 +18,7 @@ obj=[...obj,state[i]];}
         let obj1=[];
         for(let i=0;i<state.length;i++)
         {
-            if(state[i].safeId==action.payload.safe.safeId)
+            if(state[i].safeId===action.payload.safe.safeId)
 obj1=[...obj1,action.payload.safe]
 else
 obj1=[...obj1,state[i]]
@@ -29,7 +29,7 @@ obj1=[...obj1,state[i]]
     let obj5=[];
     for(let i=0;i<state.length;i++)
     {
-        if(state[i].safeId==action.payload.id){
+        if(state[i].safeId===action.payload.id){
         state[i].folder=[...state[i].folder,action.payload.obj2];
         }
 obj5=[...obj5,state[i]];
@@ -42,11 +42,11 @@ obj5=[...obj5,state[i]];
             let obj8;
             for(let i=0;i<state.length;i++)
             {
-                if(state[i].safeId==action.payload.id){
+                if(state[i].safeId===action.payload.id){
                     obj8=state[i];
                     for(let j=0;j<state[i].folder.length;j++)
             {
-                if(state[i].safeId.folder[j].id==action.payload.fid);
+                if(state[i].safeId.folder[j].id===action.payload.fid);
                 else {
                     obj7=[...obj7,state[i].safeId.folder[j]]
                 }

@@ -14,11 +14,11 @@ const folderId=props.folderId;
             <div className='secretsAvailaible'>
               
                   
-<div className='FolderIm'><img src={fol} height={"100%"} ></img></div>
+<div className='FolderIm'><img src={fol} alt="folderIcon" height={"100%"} ></img></div>
                   <span className='FolderN'>{props.folderName}</span>
               </div>
               <div className='deleteSecrets'onClick={()=>{deleteFolder(safeId,folderId)}} >
-                  <img src={del}  height={"50%"}></img>
+                  <img src={del} alt="delete" height={"50%"}></img>
               </div>
            </div>);
 }

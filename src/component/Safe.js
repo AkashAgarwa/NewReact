@@ -22,8 +22,8 @@ const handleClose = () =>{
         setCreat(1)
     }
     const dispatch=useDispatch();
-    const SelectedState=useSelector(state=>state.IS)
-    if(SelectedState.length==0)
+    let SelectedState=useSelector(state=>state.IS)
+    if(SelectedState.length === 0)
     SelectedState={
       safeId:-1
     }
@@ -31,7 +31,7 @@ const handleClose = () =>{
   
           <div className={SelectedState.safeId===dataItem.safeId?"safeCard active":'safeCard'} onMouseDown={e=>{dispatch(selectState(dataItem))}}>
            <div className='cardBox'>
-           <div className="CardImgbox"><img src={img} height={"100%"}></img></div>
+           <div className="CardImgbox"><img src={img} alt="safeImage" height={"100%"}></img></div>
               <div className='SafeName'>
                   <span title={dataItem.safeName}>{dataItem.safeName}</span>
                   <span className='timeOfCreation'>{`1 day ago`}</span>
@@ -39,10 +39,10 @@ const handleClose = () =>{
            </div>
               <div className='edit_delete' >
                   <span  onClick={setCreate}>
-                  <img src={edit} height={"50%"}></img>
+                  <img src={edit} alt="edit" height={"50%"}></img>
                   </span>
                   <span className="deleteCardClass"  onClick={e=>{dispatch(deleteSafe(dataItem.safeId));}}>
-                  <img src={del}  height={"50%"}></img>
+                  <img src={del} alt="delete" height={"50%"}></img>
                   </span>
                   
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './EmptySecret.css';
 import img from "./Images/EmptySecret.png"
 import Button from './Button';
@@ -15,7 +15,7 @@ const validateSafeForm = () => {
 };
 return ( <>
     <div className='EmptySecretMainTab'>
-<div className='ImageBoxSafeSecret'><img src={img} height={"100%"}></img></div>
+<div className='ImageBoxSafeSecret'><img src={img} alt="safeSecret" height={"100%"}></img></div>
 <div className="secrets__caption"><span>Add a <span className="secrets__caption-highlight">Folder</span> and then you’ll be able to add </span><span><span className="secrets__caption-highlight">Secrets</span> to view them all here</span></div>
 <Button label={"+Add"} 
   onClick={props.setCreate}  disabled={validateSafeForm()}/>
