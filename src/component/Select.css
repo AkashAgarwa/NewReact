@@ -1,7 +1,7 @@
 .select-group {
   margin: 0px;
   margin-bottom: 0.5rem;
-  font-size: 0.7rem;display: flex;
+  font-size: 1rem;display: flex;
   flex-direction: column;
  
   }
@@ -21,11 +21,12 @@
     text-align: left;
     color: #000;
     outline: none;
+    font-family: 'Roboto';
     display: block;
     width: 100%;
     padding: 0.7rem;
     margin-top: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     resize: none;
   }
   

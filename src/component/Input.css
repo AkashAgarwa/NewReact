@@ -1,7 +1,9 @@
 .input-group {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-family:'Roboto';
     margin-bottom: 1.2rem;
   }
+  
   label{
     font-size: 0.7rem;
   }
@@ -12,9 +14,9 @@
     width: 100%;
     padding: 0.7rem;
     margin-top: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     resize: none;
-    font-family: Helvetica;
+    font-family:'Roboto';
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

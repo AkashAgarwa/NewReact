@@ -60,7 +60,7 @@ const dispatch=useDispatch();
           label="Description"
           id="desc"
           value={ safe.desc}
-          rows={2}
+          rows={3}
           onChange={handleChange}
           help
         >

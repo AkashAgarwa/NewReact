@@ -89,7 +89,7 @@ span{
   .navBox:focus{
     background-image: linear-gradient(to top, #72134b, #1d212c);
   }
-  .active{
+  .activeNav{
     background-image: linear-gradient(to top, #72134b, #1d212c);
     
   }

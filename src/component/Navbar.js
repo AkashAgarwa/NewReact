@@ -29,10 +29,10 @@ export default function Navbar(){
   </div>
   <div className='navBarOptionBox'>
   <div className={splitLocation[1]==="" ? "navBox active" : "navBox"}><Link  to="/" style={mystyle}><span>Safes</span> </Link></div>
-  <div className={splitLocation[1]==="VaultAppRoles" ? "navBox active" : "navBox"}><Link to="/VaultAppRoles/hello" style={mystyle}><span>Vault AppRoles</span></Link></div>
-  <div className={splitLocation[1]==="ServiceAccounts" ? "navBox active" : "navBox"}><Link to="/ServiceAccounts" style={mystyle}><span>Service Accounts</span></Link></div>
-  <div className={splitLocation[1]==="IAMServiceAccounts" ? "navBox active" : "navBox"}><Link to="/IAMServiceAccounts" style={mystyle}><span>IAM Service Accounts</span></Link></div>
-  <div className={splitLocation[1]==="AzureActiveDirectory" ? "navBox active" : "navBox"}><Link to="/AzureActiveDirectory" style={mystyle}><span>Azure Active Directory</span></Link></div>
+  <div className={splitLocation[1]==="VaultAppRoles" ? "navBox activeNav" : "navBox"}><Link to="/VaultAppRoles/hello" style={mystyle}><span>Vault AppRoles</span></Link></div>
+  <div className={splitLocation[1]==="ServiceAccounts" ? "navBox activeNav" : "navBox"}><Link to="/ServiceAccounts" style={mystyle}><span>Service Accounts</span></Link></div>
+  <div className={splitLocation[1]==="IAMServiceAccounts" ? "navBox activeNav" : "navBox"}><Link to="/IAMServiceAccounts" style={mystyle}><span>IAM Service Accounts</span></Link></div>
+  <div className={splitLocation[1]==="AzureActiveDirectory" ? "navBox activeNav" : "navBox"}><Link to="/AzureActiveDirectory" style={mystyle}><span>Azure Active Directory</span></Link></div>
   </div>
   </div>
   <div className="rightNavBar"> <div className="navDocument"><span><i className="fa fa-file-text-o" style={{fontSize:"0.7rem"}}></i>  Documentation</span></div>

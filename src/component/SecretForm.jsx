@@ -22,11 +22,13 @@ const folderId=useSelector(state=>state.fid)
   const data=useSelector(state=>state.IS);
   const dispatch=useDispatch();
 
-  // const validateSecretsForm = () => {
-  //   if (secret.name.length) return false;
+  const validateSafeForm = () => {
+    if (
+      (secret.name).length < 3 )
+      return true;
 
-  //   return true;
-  // };
+    return false;
+  };
 
   return (
       <div className="secretFormMainTab">
@@ -47,7 +49,7 @@ const folderId=useSelector(state=>state.fid)
           <Button
             label="Save"
             onClick={ () => {props.handleClose(); dispatch(addFolder(data.safeId,secret)) } }
-            
+            disabled={validateSafeForm()}
           />
         </div>
       </form>

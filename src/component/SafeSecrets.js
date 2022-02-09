@@ -7,7 +7,7 @@ import EmptySecret from './EmptySecret';
 import AvailaibleFolder from './AvailaibleFolder';
 import { useSelector } from 'react-redux';
 
-// import disImg from './Images/folderIcon.png'
+import disImg from './Images/folderIcon.png'
 
 function SafeSecrets(props) {
     const data=useSelector(state=>state.IS);
@@ -17,6 +17,12 @@ function SafeSecrets(props) {
     //     else
     //     return 0;
     //   };
+    const validateSafeForm = () => {
+        if(Object.keys(data).length===0)
+        return true;
+        return false;
+      };
+     const disabled=validateSafeForm();
     const number=Object.keys(data).length===0 ? 0: data.folder.length;
     const [creat,setCreat]=useState(0);
     const handleClose = () =>{
@@ -32,8 +38,15 @@ function SafeSecrets(props) {
 <div className='SecretBox'>Secrets</div>
     <div className='SecretBox'>Permisson</div>
     
-    <div className='folder SecretBox'><span className='FolderImage'> <img src={fol} height={"100%"} alt="folderImage" onClick={setCreate}></img>
-    </span></div>
+    <div className='folder SecretBox'>
+    { disabled ?
+    
+    <span className='FolderImage'><img src={disImg} height={"100%"} alt="folderImage" ></img></span> : 
+    
+    <span className='FolderImage'><img src={fol} height={"100%"} alt="folderImage" onClick={setCreate}></img></span>} 
+    
+    
+    </div>
     
     {creat? <SecretForm handleClose={handleClose} />:null}
     </div>
