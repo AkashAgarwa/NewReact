@@ -10,13 +10,7 @@ const data=useSelector(state=>state.IS).folder;
 const listItems = data.map((data1,index) =><li  key={index}>
   <Folder folderName={data1.name} folderId={data1.id}/>
 </li>
-);
-const validateSafeForm = () => {
-  if(Object.keys(data).length===0)
-  return true;
-  return false;
-};
-  
+); 
 return (  <>
     <div className='AvaecretMainTab'>
     <div className="folderList">
@@ -24,9 +18,6 @@ return (  <>
         {listItems}
     </ul>
 </div>
-{/* <div className='AvailableButton'><Button label={"+Add"} 
-  onClick={props.setCreate} disabled={validateSafeForm()}/></div>
-{props.creat? <SecretForm handleClose={props.handleClose} />:null} */}
 </div></> );
 }
 

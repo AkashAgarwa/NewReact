@@ -104,6 +104,7 @@ display:block;
     flex-grow: 0;
     white-space: nowrap;
     display: flex;
+    padding: 0;
   }
   .navBox>span{
     word-break: unset;

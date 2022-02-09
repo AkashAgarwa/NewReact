@@ -43,7 +43,8 @@
     height: 75%;
 }
 .searchBox{
-    height: 8%;
+    padding: 0.5rem 0;
+    border-bottom:   1px solid #2a2e3e;; 
 }
 .SafeBox{
     height: 92%;

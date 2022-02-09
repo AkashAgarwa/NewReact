@@ -46,12 +46,12 @@ export const searchitem = (searchdata) => {
           }
     }
 }
-// export const deleteFolder = (safeId,folderId) => {
-//     return{
-//         type: "DELETEFOLDER",
-//       payload:{
-//         id:safeId, 
-//         fid:folderId
-//           }
-//     }
-// }
+export const deleteFolder = (safeId,folderId) => {
+    return{
+        type: "REMOVEFOLDER",
+      payload:{
+        safeId:safeId, 
+        folderId:folderId
+          }
+    }
+}

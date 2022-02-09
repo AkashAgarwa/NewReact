@@ -36,29 +36,24 @@ obj5=[...obj5,state[i]];
 
     }
     return obj5;
-    //     case "DELETEFOLDER":
-    //         let obj6=[];
-    //         let obj7=[];
-    //         let obj8;
-    //         for(let i=0;i<state.length;i++)
-    //         {
-    //             if(state[i].safeId===action.payload.id){
-    //                 obj8=state[i];
-    //                 for(let j=0;j<state[i].folder.length;j++)
-    //         {
-    //             if(state[i].safeId.folder[j].id===action.payload.fid);
-    //             else {
-    //                 obj7=[...obj7,state[i].safeId.folder[j]]
-    //             }
-    //         }
-    //         obj8.folder=obj7;
-    //         obj6=[...obj6,obj8]
-    //     }
-    //     else{
-    //         obj6=[...obj6,state[i]]
-    //     }
-    // }
-    // return obj6;
+    case "REMOVEFOLDER":
+        let dataOFRemovedFolder=[];
+        for(let j=0;j<(state ? state.length : 0);j++)
+        if(state[j].safeId===action.payload.safeId){
+            let fol=[];
+            for(let i=0;i<(state[j].folder ? state[j].folder.length : 0);i++){
+                if(state[j].folder[i].id === action.payload.folderId)
+                continue;
+                else
+                fol=[...fol,state[j].folder[i]];
+            }
+            state[j].folder=fol;
+            dataOFRemovedFolder=[...dataOFRemovedFolder,state[j]];
+        }
+
+        else{dataOFRemovedFolder=[...dataOFRemovedFolder,state[j]];
+}
+return dataOFRemovedFolder;
         default:
             return state;
     }

@@ -4,7 +4,7 @@ import './Folder.css'
 
 import del from './Images/delete.png'
 
-// import { deleteFolder } from '../Action';
+import { deleteFolder } from '../Action';
 import fol from './Images/FolderImage.png'
 import { useDispatch } from 'react-redux';
 function Folder(props) {
@@ -18,11 +18,11 @@ const dispatch=useDispatch();
 <div className='FolderIm'><img src={fol} alt="folderIcon" height={"100%"} ></img></div>
                   <span className='FolderN'>{props.folderName}</span>
               </div>
-              <span className='deleteSecrets'>
+              <span className='deleteSecrets' onClick={e=>dispatch(deleteFolder(safeId, props.folderId))}>
                   <img src={del} alt="delete" height={"50%"}></img>
               </span>
            </div>);
 }
-// dispatch(deleteFolder(safeId, props.folderId));
+
 
 export default Folder;
