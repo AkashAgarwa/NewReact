@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 
+// import {Interval, DateTime } from 'luxon';
 import img from '../../Images/safe-icon.69ebc33f.png'
 import './SafeCard.css'
 import edit from '../../Images/download.png'
@@ -26,6 +27,57 @@ const handleClose = () =>{
     SelectedState={
       safeId:-1
     }
+    const CurrDate=new Date();
+    var Difference_In_Time = CurrDate.getTime() - dataItem.date.getTime();
+    
+var Difference_In_Seconds = Difference_In_Time / (1000);
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+let diffrenceInTime;
+if(Difference_In_Days>730)
+{
+  diffrenceInTime='a few year ago'
+}
+else if(Difference_In_Days>364)
+{
+  diffrenceInTime='a year ago'
+}
+else if(Difference_In_Days>60)
+{
+  diffrenceInTime='a few months ago'
+}
+else if(Difference_In_Days>30)
+{
+  diffrenceInTime='a month ago'
+}
+else if(Difference_In_Days>2)
+{
+  diffrenceInTime='a few days ago'
+}
+else if(Difference_In_Days>1)
+{
+  diffrenceInTime='a day ago'
+}
+else if(Difference_In_Seconds >= 7200)
+{
+  diffrenceInTime='a few hours ago'
+}
+else if(Difference_In_Seconds >= 3660)
+{
+  diffrenceInTime='an hours ago'
+}
+else if(Difference_In_Seconds >= 120)
+{
+  diffrenceInTime='a few minutes ago'
+}
+else if(Difference_In_Seconds >= 60)
+{
+  diffrenceInTime='a minute ago'
+}
+else
+{
+  diffrenceInTime='a few seconds ago'
+}
+
   return ( <>
   
           <div className={SelectedState.safeId===dataItem.safeId?"safeCard active":'safeCard'} onMouseDown={e=>{dispatch(selectState(dataItem))}}>
@@ -33,7 +85,7 @@ const handleClose = () =>{
            <div className="CardImgbox"><img src={img} alt="safeImage" height={"100%"}></img></div>
               <div className='SafeName'>
                   <span className='safeNameSpan' title={dataItem.safeName}>{dataItem.safeName}</span>
-                  <span className='timeOfCreation'>{`Lase Updated:a few seconds ago`}</span>
+                  <span className='timeOfCreation'>{`Last Updated : ${diffrenceInTime}`}</span>
               </div>
            </div>
               <div className='edit_delete' >

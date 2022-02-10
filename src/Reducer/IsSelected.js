@@ -3,10 +3,14 @@ export default function isSelected(state = {} ,action){
         case "SELECTED":
             return action.payload.safe;
             case "ADD":
-                return action.payload.safe
+                action.payload.safe.date=new Date();
+            return action.payload.safe
+
         case "DELETE":
             return {};
             case "EDIT":
+                
+                action.payload.safe.date=new Date();
                 return action.payload.safe;
         case "REMOVEFOLDER":
             let fol=[];

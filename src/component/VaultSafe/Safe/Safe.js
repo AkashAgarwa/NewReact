@@ -18,13 +18,16 @@ let data=useSelector(state => state.safe);
             const setCreate = ()=> {
                 setCreat(1)
             }
+            let newDate = new Date();
+            
             const newSafe = {
                 safeId:`${safeId}`,
                 safeName:"",
                 ownerName:"",
                 type:"personal",
                 desc:"",
-                folder:[]
+                folder:[],
+              date : newDate,
             };
 const [searchTerm,setSearchTerm]=useState("");
 const handleOnChange=(e)=>{

@@ -3,7 +3,10 @@ export default function dataReducer (state = [] , action) {
     switch (action.type) {
         
      case "ADD":
+      
+        action.payload.safe.date=new Date();
          return [...state,action.payload.safe];
+
     case "DELETE":
         let obj=[];
         for(let i=0;i<state.length;i++)
@@ -15,6 +18,8 @@ obj=[...obj,state[i]];}
         }
         return obj;
         case "EDIT":
+  
+            action.payload.safe.date=new Date();
         let obj1=[];
         for(let i=0;i<state.length;i++)
         {
