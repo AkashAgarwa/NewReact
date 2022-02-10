@@ -32,8 +32,8 @@ const handleClose = () =>{
            <div className='cardBox'>
            <div className="CardImgbox"><img src={img} alt="safeImage" height={"100%"}></img></div>
               <div className='SafeName'>
-                  <span title={dataItem.safeName}>{dataItem.safeName}</span>
-                  <span className='timeOfCreation'>{`1 day ago`}</span>
+                  <span className='safeNameSpan' title={dataItem.safeName}>{dataItem.safeName}</span>
+                  <span className='timeOfCreation'>{`Lase Updated:1 day ago`}</span>
               </div>
            </div>
               <div className='edit_delete' >
