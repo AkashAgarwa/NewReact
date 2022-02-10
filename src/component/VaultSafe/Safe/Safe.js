@@ -1,7 +1,7 @@
 import './Safe.css'
 import SafeCard from "../SafeCards/SafeCard";
 import { useSelector } from "react-redux";
-import {ComptuImage} from '../../Images/safe.b9aa346a.png'
+// import {ComptuImage} from '../../Images/safe.b9aa346a.png'
 import SafeTopBar from '../SafeCards/SafeCard'
 import {AddIcon} from '../../Images/AddIcon'
 import React, { useState} from 'react';
