@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import "./SafesForm.css";
-import Button from '../Button/Button';
-import Input from '../Input/Input';
+import Button from '../../Button/Button';
+import Input from '../../Input/Input';
 import safeIcon from '../Images/safe-icon.69ebc33f.png'
 import Select from "./Select";
 import { useDispatch } from "react-redux";

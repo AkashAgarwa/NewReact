@@ -5,7 +5,7 @@ import img from '../../Images/safe-icon.69ebc33f.png'
 import './SafeCard.css'
 import edit from '../../Images/download.png'
 import del from '../../Images/delete.png'
-import SafesForm from '../../SafeForm/SafesForm';
+import SafesForm from '../SafeForm/SafesForm';
 import { useDispatch, useSelector } from 'react-redux';
 import {deleteSafe,selectState} from '../../../Action';
 
