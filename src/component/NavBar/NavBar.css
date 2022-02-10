@@ -120,5 +120,12 @@ display:block;
 .navBarOptionBox{
   justify-content: space-between;
 }
-  }
-  
+}
+
+
+@media screen and (max-width: 780px) {
+.navBarOptionBox{
+display: none;
+    }
+
+}

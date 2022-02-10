@@ -1,9 +1,9 @@
 import './Safe.css'
 import SafeCard from "../SafeCards/SafeCard";
 import { useSelector } from "react-redux";
-// import {ComptuImage} from '../../Images/safe.b9aa346a.png'
-import SafeTopBar from '../SafeCards/SafeCard'
-import {AddIcon} from '../../Images/AddIcon'
+import ComptuImage from '../../Images/CompImage.png'
+import SafeTopBar from '../SafeTopBar/SafeTopBar'
+import AddIcon from '../../Images/AddIcon.png'
 import React, { useState} from 'react';
 import SafesForm from '../SafeForm/SafesForm';
 
@@ -15,7 +15,6 @@ let data=useSelector(state => state.safe);
         const handleClose = () =>{
             setCreat(0)
             }
-      
             const setCreate = ()=> {
                 setCreat(1)
             }
@@ -31,20 +30,31 @@ const [searchTerm,setSearchTerm]=useState("");
 const handleOnChange=(e)=>{
     setSearchTerm(e.target.value);
 }
-if( (searchTerm) && (data.length!==0))
+if( (searchTerm) && (Object.keys(data)))
 {
 data= data.filter(data1=>data1.safeName.includes(searchTerm));
 } 
-const listItems =data.map((data1,index) =><li  key={data1.safeId}>
-    <SafeCard value={data1}/>
-</li>
-) 
+let listItems;
+if(Object.keys(data))
+ {
+listItems =data.map((data1,index) =><li  key={data1.safeId}>
+        <SafeCard value={data1}/>
+    </li>)
+}
+    let numberOfdata;
+if(Object.keys(data))
+numberOfdata=data.length;
+else
+numberOfdata=0;
+
+ 
 return (  
     <>
 <div className="safeMainTab">
-<SafeTopBar searchTerm={searchTerm} handleOnChange={handleOnChange} numberOfdata={data.length}/>
+    <div><SafeTopBar searchTerm={searchTerm} handleOnChange={handleOnChange} numberOfData={numberOfdata}/>
+</div>
 {
-data.length?
+numberOfdata?
 <div className="availaibleSafes">
 <ul  style={{listStyle: "none" ,padding:"0px", margin:"0px"}}>
 {listItems}
@@ -53,8 +63,8 @@ data.length?
 </div>
 :
 <div className="noAvailaibleSafe">
-<div className='CompImage'><img alt="ComputerIcon" src={ComptuImage} width={"100%"}></img></div>
-<div className="addIcon"  onClick={setCreate} title='Create New Safe' ><img alt="AddIcon" src={AddIcon}></img></div>
+<div className='CompImage'><img alt="ComputerIcon" src={ComptuImage} height={"100%"} ></img></div>
+<div className="addIcon"  onClick={setCreate} title='Create New Safe' ><img height={"100%"} alt="AddIcon" src={AddIcon}></img></div>
 </div>
 }
 </div>
