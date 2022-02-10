@@ -1,14 +1,11 @@
-
-import Button from './Button';
-import SecretForm from './SecretForm';
 import React from 'react';
-import Folder from './Folder';
-import './AvailaibleFolder.css'
+import SecretCard from '../../SecretCard/SecretCard'
+import './AvailaibleSecrets.css'
 import { useSelector } from 'react-redux';
-function AvailaibleFolder(props) {
+function AvailaibleSecrets(props) {
 const data=useSelector(state=>state.IS).folder;
 const listItems = data.map((data1,index) =><li  key={index}>
-  <Folder folderName={data1.name} folderId={data1.id}/>
+  <SecretCard folderName={data1.name} folderId={data1.id}/>
 </li>
 ); 
 return (  <>
@@ -21,4 +18,4 @@ return (  <>
 </div></> );
 }
 
-export default AvailaibleFolder
+export default AvailaibleSecrets

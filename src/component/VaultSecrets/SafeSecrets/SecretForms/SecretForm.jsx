@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./SecretForm.css";
-import Input from "./Input";
-import Button from "./Button";
+import Input from "../../../Input/Input";
+import Button from "../../../Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { addFolder} from "../Action";
-
+import { addFolder} from "../../../../Action";
 const SecretForm = (props) => {
 const folderId=useSelector(state=>state.fid)
   const newSecret = { id : `${folderId}`,

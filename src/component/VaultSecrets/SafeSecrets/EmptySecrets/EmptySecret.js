@@ -1,8 +1,8 @@
 import React from 'react';
 import './EmptySecret.css';
-import img from "./Images/EmptySecret.png"
-import Button from './Button';
-import SecretForm from './SecretForm';
+import img from "../../../Images/EmptySecret.png"
+import Button from '../../../Button/Button';
+import SecretForm from '../SecretForms/SecretForm';
 import { useSelector } from 'react-redux';
 
 function EmptySecret(props) {

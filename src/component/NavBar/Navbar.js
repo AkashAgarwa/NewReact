@@ -1,6 +1,6 @@
 import React  from 'react';
 import './NavBar.css'
-import {useLocation, Link,  useParams } from 'react-router-dom';
+import {useLocation, Link } from 'react-router-dom';
 export default function Navbar(){
 
   const mystyle={
@@ -10,7 +10,6 @@ export default function Navbar(){
     textDecoration: "none",
  
   }
-  // const currentRoute = useHistory().location.pathname.toLowerCase();
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");

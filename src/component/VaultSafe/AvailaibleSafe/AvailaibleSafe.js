@@ -1,6 +1,6 @@
-import CreateIcon from "./CreateIcon";
-import './Availaible.css'
-import Safe from "./Safe";
+import CreateIcon from "../CreateIcon/CreateIcon";
+import './AvailaibleSafe.css'
+import SafeCard from "../SafeCards/SafeCard";
 import { useSelector } from "react-redux";
 
 function Availaible(props) {
@@ -12,7 +12,7 @@ if( (searchData) && (Object.keys(data).length!==0))
   data= data.filter(data1=>data1.safeName.includes(searchData));
 } 
 const listItems =data.map((data1,index) =><li  key={data1.safeId}>
-    <Safe value={data1}/>
+    <SafeCard value={data1}/>
 </li>
 ) 
 return (  
@@ -25,7 +25,7 @@ return (
     </ul>
 </div>
 
-    <div className="iconBox"><CreateIcon/></div>
+    <div className="iconBox"><CreateIcon setCreate={props.setCreate}/></div>
     </div>);
 }
 

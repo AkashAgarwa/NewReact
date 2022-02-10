@@ -1,18 +1,17 @@
 import './App.css';
-import Navbar from './component/Navbar';
+import Navbar from './component/NavBar/Navbar';
 import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  useParams
+  Route
 } from "react-router-dom";
 
-import Sales from './component/Sales'
-import VaultAppRoles from './component/VaultAppRoles';
-import ServiceAccounts from './component/ServiceAccounts';
-import IAMServiceAccounts from './component/IAMServiceAccounts';
-import AzureActiveDirectory from './component/AzureActiveDirectory';
+import Main from './component/Main/Main'
+import VaultAppRoles from './component/VaultPages/VaultAppRoles';
+import ServiceAccounts from './component/VaultPages/ServiceAccounts';
+import IAMServiceAccounts from './component/VaultPages/IAMServiceAccounts';
+import AzureActiveDirectory from './component/VaultPages/AzureActiveDirectory';
 
 export default function App() {
   return (
@@ -23,7 +22,7 @@ export default function App() {
     <Navbar/>
     <Switch>
           <Route exact path="/">
-            <Sales />
+            <Main />
           </Route>
           <Route exact path="/VaultAppRoles/:name">
             <VaultAppRoles />

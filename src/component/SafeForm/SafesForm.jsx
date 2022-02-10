@@ -1,11 +1,11 @@
 import React, {useState } from "react";
 import "./SafesForm.css";
-import Button from './Button';
-import Input from './Input';
-import safeIcon from './Images/safe-icon.69ebc33f.png'
+import Button from '../Button/Button';
+import Input from '../Input/Input';
+import safeIcon from '../Images/safe-icon.69ebc33f.png'
 import Select from "./Select";
 import { useDispatch } from "react-redux";
-import { addData, safeEdit,} from "../Action";
+import { addData, safeEdit,} from "../../Action";
 const SafesForm = (props) => {
 const newSafe=props.data;
 

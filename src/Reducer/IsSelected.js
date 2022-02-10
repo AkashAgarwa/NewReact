@@ -18,16 +18,17 @@ export default function isSelected(state = {} ,action){
             }
             state.folder=fol;
             return state;
-            case "ADDFOLDER":
-                let obj5=[];
-                for(let i=0;i<state.length;i++)
-                {
-                    if(state[i].safeId===action.payload.id){
-                    state[i].folder=[...state[i].folder,action.payload.obj2];
-                    }
-            obj5=[...obj5,state[i]];
+            // case "ADDFOLDER":
+            //     let obj5=[];
+            //     for(let i=0;i<state.length;i++)
+            //     {
+            //         if(state[i].safeId===action.payload.id){
+            //         state[i].folder=[...state[i].folder,action.payload.obj2];
+            //         }
+            // obj5=[...obj5,state[i]];
             
-                }
+            //     }
+            //     break;
         default:return state;
     }
 }

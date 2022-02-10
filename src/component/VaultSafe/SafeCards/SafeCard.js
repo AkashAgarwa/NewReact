@@ -1,14 +1,13 @@
 
 import React, { useState } from 'react';
 
-import img from './Images/safe-icon.69ebc33f.png'
-import './Safe.css'
-import edit from './Images/download.png'
-import del from './Images/delete.png'
-import SafesForm from './SafesForm';
+import img from '../../Images/safe-icon.69ebc33f.png'
+import './SafeCard.css'
+import edit from '../../Images/download.png'
+import del from '../../Images/delete.png'
+import SafesForm from '../../SafeForm/SafesForm';
 import { useDispatch, useSelector } from 'react-redux';
-
-import {deleteSafe,selectState} from '../Action';
+import {deleteSafe,selectState} from '../../../Action';
 
 function Safe(props) {
   const dataItem=props.value;

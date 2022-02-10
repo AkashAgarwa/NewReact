@@ -1,22 +1,15 @@
 import './SafeSecrets.css'
-
-import fol from './Images/FolderImage.png'
+import fol from '../../Images/FolderImage.png'
 import { useState } from 'react';
-import SecretForm from './SecretForm';
-import EmptySecret from './EmptySecret';
-import AvailaibleFolder from './AvailaibleFolder';
+import SecretForm from './SecretForms/SecretForm';
+import EmptySecret from './EmptySecrets/EmptySecret';
+import AvailaibleSecrets from './AvailaibleSecrets/AvailaibleSecrets';
 import { useSelector } from 'react-redux';
 
-import disImg from './Images/folderIcon.png'
+import disImg from '../..//Images/folderIcon.png'
 
 function SafeSecrets(props) {
     const data=useSelector(state=>state.IS);
-    // const validateSafeForm = () => {
-    //     if(Object.keys(data).length===0)
-    //     return 1;
-    //     else
-    //     return 0;
-    //   };
     const validateSafeForm = () => {
         if(Object.keys(data).length===0)
         return true;
@@ -54,7 +47,7 @@ function SafeSecrets(props) {
     </div>
     <div className='availaibleFolder'>
     <div className="secrets__count">{`${number} Secrets`}</div>
-        {number ? <AvailaibleFolder creat={creat} handleClose={handleClose} setCreate={setCreate}/>: <EmptySecret  creat={creat} handleClose={handleClose} setCreate={setCreate}/>}
+        {number ? <AvailaibleSecrets creat={creat} handleClose={handleClose} setCreate={setCreate}/>: <EmptySecret  creat={creat} handleClose={handleClose} setCreate={setCreate}/>}
     </div>
     </div>);
 }

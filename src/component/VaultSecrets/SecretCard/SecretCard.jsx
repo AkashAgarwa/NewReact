@@ -1,13 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './Folder.css'
-
-import del from './Images/delete.png'
-
-import { deleteFolder } from '../Action';
-import fol from './Images/FolderImage.png'
+import './SecretCard.css'
+import del from '../../Images/delete.png'
+import { deleteFolder } from '../../../Action';
+import fol from '../../Images/FolderImage.png'
 import { useDispatch } from 'react-redux';
-function Folder(props) {
+function SecretCard(props) {
 const safeId=(useSelector(state=>state.IS)).safeId;
 const dispatch=useDispatch();
     return (  
@@ -25,4 +23,4 @@ const dispatch=useDispatch();
 }
 
 
-export default Folder;
+export default SecretCard;

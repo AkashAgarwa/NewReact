@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector , useDispatch} from 'react-redux';
 import { useState} from 'react';
-import {searchitem} from '../Action'
-import './SafeSearch.css'
+import {searchitem} from '../../../Action'
+import './SafeTopBar.css'
 function SafeSearch() {
   
 const data=useSelector(state=>state.safe);
