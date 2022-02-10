@@ -23,7 +23,7 @@ const [creat,setCreat]=useState(0);
         }
 
  return (  <div className='imageBox'>
-        <button className='imageButton' onClick={setCreate} title='Create New Safe'>+</button>
+        <div className='plusIcon' onClick={setCreate} title='Create New Safe'>+</div>
    {creat ?  <SafesForm  data={newSafe}  handleClose={handleClose} edit={0}/> : null }
 
     </div> );

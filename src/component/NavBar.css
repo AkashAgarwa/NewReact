@@ -52,10 +52,11 @@ grid-gap:0.2rem;
       margin-right:2.2rem;
    
   }
-  .title{font-family: sans-serif;
+  .title{
+    font-family: 'Roboto','sans-serif';
       font-size: 1.3rem;
       white-space: nowrap;
-      font-weight: 400;
+      font-weight: bold;
       font-style: normal;
       line-height: normal;
       letter-spacing: 3.84px;

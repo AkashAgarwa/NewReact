@@ -19,7 +19,7 @@ dispatch(searchitem(e.target.value));
        return (  <>
     
     <div className="topBarAvailaibleSafe">
-<span>All Safes{`(${number})`}</span>
+<span>All Safes{` (${number})`}</span>
 <div className='searchGroup'>
   <input type="text" placeholder='Search' value={searchTerm} onChange={handleOnChange}/>
 </div>

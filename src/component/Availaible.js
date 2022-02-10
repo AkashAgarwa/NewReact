@@ -20,7 +20,7 @@ return (
     <div className="availaibleMainTab">
 
 <div className="safeList">
-    <ul  style={{listStyle: "none" ,padding:"0px"}}>
+    <ul  style={{listStyle: "none" ,padding:"0px", margin:"0px"}}>
         {listItems}
     </ul>
 </div>

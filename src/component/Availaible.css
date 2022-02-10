@@ -2,7 +2,7 @@
 width: 100%;
 overflow-y: scroll;
 overflow-x: hidden;
-height: calc(100% - 4rem);
+height: 100%
 
 }
 .safeList::-webkit-scrollbar {

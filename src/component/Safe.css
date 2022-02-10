@@ -33,6 +33,8 @@ justify-content: space-between;
 .SafeName>span{
     font-size: 0.8rem;
     max-width:100%;
+    font-family: 'Roboto';
+    font-size: 1rem;
     color: white;   
     font-weight: 400;
     white-space: nowrap;
@@ -80,7 +82,7 @@ justify-content: space-between;
 .edit_delete>span{
     cursor: pointer;
     height: 100%;
-    
+    padding: 5px 10px;
     display: flex;
     align-items: center
 }

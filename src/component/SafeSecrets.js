@@ -39,6 +39,8 @@ function SafeSecrets(props) {
     <div className='SecretBox'>Permisson</div>
     
     <div className='folder SecretBox'>
+        <span className='addFolderText'>Add Folder</span>
+        
     { disabled ?
     
     <span className='FolderImage'><img src={disImg} height={"100%"} alt="folderImage" ></img></span> : 
