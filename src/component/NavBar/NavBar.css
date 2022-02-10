@@ -1,10 +1,4 @@
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-}
+
 Nav{
     height: 4.375rem;
     width: 100vw;
@@ -70,7 +64,7 @@ span{
     flex-grow: 0;
     color: #cccccc;
     
-   font-family: sans-serif;
+   font-family: 'Roboto';
     font-size: 0.7rem;
     font-weight: bold;
     font-style: normal;
@@ -113,7 +107,7 @@ display:block;
     color: #c4c4c4;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1124px) {
 .rightNavBar{
   display: none;
 }
@@ -123,7 +117,7 @@ display:block;
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
 .navBarOptionBox{
 display: none;
     }

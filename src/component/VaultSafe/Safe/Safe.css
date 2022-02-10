@@ -17,13 +17,11 @@
     flex-direction: column;
     }
 
-    .addIcon{
-      height: 15%;
-    }
     .nonEmpty{
         position: fixed;
-        top: 93%;
-        left:35%
+
+bottom: 7vh;
+        left:35vw;
     }
 
     .safeMainTab>img{
@@ -32,3 +30,21 @@
     .CompImage{
 height: 30%;
     }
+    @media screen and (max-width: 768px) {
+        .nonEmpty{
+            position: fixed;
+            left: 78vw
+        }
+        
+        }
+.addIcon{
+width: 4rem;
+height: 4rem;
+}
+
+@media screen and (max-width: 500px){
+.nonEmpty {
+    position: fixed;
+    left: 70vw;
+
+}}

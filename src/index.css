@@ -13,6 +13,87 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+monospace;
+}
+
+@media screen and (min-width: 1386px) {
+*{
+font-size: 18px;
+}
+}
+@media screen and (min-width: 1560px) {
+*{
+font-size: 20px;
+}
+}
+@media screen and (min-width: 1664px) {
+*{
+font-size: 22px;
+}
+}
+@media screen and (min-width: 1772px) {
+*{
+font-size: 24px;
+}
+}
+@media screen and (min-width: 1872px) {
+*{
+font-size: 26px;
+}
+}
+@media screen and (min-width: 1950px) {
+*{
+font-size: 28px;
+}
+}
+@media screen and (min-width: 2050px) {
+*{
+font-size: 30px;
+}
+}
+@media screen and (min-width: 2150px) {
+*{
+font-size: 32px;
+}
+}
+@media screen and (min-width: 2250px) {
+*{
+font-size: 34px;
+}
+}
+@media screen and (min-width: 3350px) {
+*{
+font-size: 36px;
+}
+}
+@media screen and (min-width: 3450px) {
+*{
+font-size: 38px;
+}
+}
+@media screen and (min-width: 3350px) {
+*{
+font-size: 40px;
+}
+}
+@media screen and (min-width: 3450px) {
+*{
+font-size: 42px;
+}
+}
+@media screen and (min-width: 3550px) {
+*{
+font-size: 44px;
+}
+}
+@media screen and (min-width: 3650px) {
+*{
+font-size: 46px;
+}
+}
+@media screen and (min-width: 3750px) {
+*{
+font-size: 48px;
+}
 }

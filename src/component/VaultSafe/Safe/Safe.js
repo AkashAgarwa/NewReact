@@ -59,7 +59,7 @@ numberOfdata?
 <ul  style={{listStyle: "none" ,padding:"0px", margin:"0px"}}>
 {listItems}
 </ul>
-<div className="addIcon nonEmpty"  onClick={setCreate} title='Create New Safe'><img  alt="AddIcon" src={AddIcon}></img></div>
+<div className="addIcon nonEmpty"  onClick={setCreate} title='Create New Safe'><img height={"100%"} alt="AddIcon"  src={AddIcon}></img></div>
 </div>
 :
 <div className="noAvailaibleSafe">

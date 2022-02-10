@@ -89,7 +89,6 @@ justify-content: space-between;
 .deleteCardClass
 {
     height: 100%;  
-    z-index:2;
     display: flex;
     align-items: center;
 }

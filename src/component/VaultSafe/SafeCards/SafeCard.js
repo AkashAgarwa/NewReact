@@ -9,7 +9,7 @@ import SafesForm from '../SafeForm/SafesForm';
 import { useDispatch, useSelector } from 'react-redux';
 import {deleteSafe,selectState} from '../../../Action';
 
-function Safe(props) {
+function SafeCard(props) {
   const dataItem=props.value;
  
 const [creat,setCreat]=useState(0);
@@ -50,4 +50,4 @@ const handleClose = () =>{
     </> );
 }
 
-export default Safe;
+export default SafeCard;

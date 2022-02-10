@@ -1,7 +1,9 @@
 import React  from 'react';
 import './NavBar.css'
 import {useLocation, Link } from 'react-router-dom';
-export default function Navbar(){
+import {Option} from '../Images/OptionIcon.jpg'
+export default function Navbar()
+{
 
   const mystyle={
     fontFamily: "Helvetica",
